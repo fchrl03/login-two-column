@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side-left {
+  flex: 50%;
+  position: relative;
+}
+
+.top-logo {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+
+.top-phone {
+  display: none;
+}
+
+.desc-logo {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 150px;
+  left: 70px;
+  font-weight: 400;
+}
+
+.desc-logo1 {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 182px;
+  left: 70px;
+  font-weight: 400;
+}
+
+.img-side {
+  width: 100%;
+  height: 100%;
+}
+
+.side-right {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 80px 0 80px;
+}
+
+.title {
+  color: #eb2730;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.btn-google {
+  width: 100%;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  color: #3f3b31;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.img-google {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.btn-fb {
+  width: 100%;
+  background-color: #3a589b;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.line-break {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.desc-line {
+  font-size: 15px;
+  color: #b1b1b1;
+  font-weight: 400;
+}
+
+.sec-input {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+label::after {
+  content: '*';
+  color: red;
+}
+
+input[type='email'] {
+  margin: 10px 0 20px 0;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+input[type='password'] {
+  margin: 10px 0 30px 0;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+.btn-submit {
+  background-color: #eb2730;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 10px;
+  color: white;
+  padding: 12px;
+  box-shadow: 1px 1px 5px 0px rgba(235, 39, 48, 0.75);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.forgot {
+  margin: 25px 0 15px 0;
+  color: #00acee;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.desc-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.desc-text-footer {
+  margin-right: 6px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.desc-text-footer1 {
+  color: #00acee;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 426px) {
+  .desc-logo {
+    top: 65px;
+  }
+
+  .desc-logo1 {
+    top: 88px;
+  }
+
+  .desc-logo,
+  .desc-logo1 {
+    font-size: 22px;
+    left: 25px;
+  }
+
+  .top-logo {
+    top: 20px;
+    left: 25px;
+    width: 92px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .desc-line {
+    font-size: 9px;
+  }
+
+  .btn-fb,
+  .btn-google {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type='email'],
+  input[type='password'] {
+    padding: 12px;
+    font-size: 10px;
+  }
+
+  .btn-submit {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .forgot {
+    font-size: 12px;
+  }
+
+  .desc-text-footer,
+  .desc-text-footer1 {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin-bottom: 40px;
+  }
+
+  .side-left,
+  .side-right {
+    flex: 100%;
+  }
+
+  .img-side {
+    display: none;
+  }
+
+  .top-phone {
+    display: block;
+    width: 100%;
+  }
+
+  .side-right {
+    padding: 0 15px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .title {
+    margin-top: 20px;
+  }
+}
